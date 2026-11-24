@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TikTok FC - Football Club Website Template Free</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="manifest.json" rel="manifest">
+    <meta name="theme-color" content="#EB1616">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center ms-4 ms-lg-0">
+            <img class="img-fluid" src="img/logo.png" alt="" style="height: 60px;">
+            <h2 class="text-primary ms-2 mb-0">TikTok FC</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="match.html" class="nav-item nav-link">Matches</a>
+                <a href="team.html" class="nav-item nav-link">Players</a>
+                <a href="shop.html" class="nav-item nav-link">Shop</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="highlight.html" class="dropdown-item">Highlights</a>
+                        <a href="event.html" class="dropdown-item">Club Events</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="tickets.html" class="btn btn-primary py-2 px-lg-4 d-none d-lg-block">Buy Ticket<i class="fa fa-arrow-right ms-2"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active video-slide">
+                    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+                        <source src="img/home.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="caption-text d-inline rounded m-4 p-4 m-lg-5 p-lg-5">
+                            <h2 class="text-primary animated slideInDown mb-4">A New Era of Football</h2>
+                            <h1 class="display-1 mb-4 text-white animated slideInDown">Play With Pride.<br>Fight With Passion.</h1>
+                            <p class="fs-4 text-light mb-5 animated slideInDown">TikTok FC — Together We Rise</p>
+                            <a href="tickets.html" class="btn btn-primary py-3 px-5 animated slideInDown">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item video-slide">
+                    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+                        <source src="img/home.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="caption-text d-inline rounded m-4 p-4 m-lg-5 p-lg-5">
+                            <h2 class="text-primary animated slideInDown">The Lions Are Ready</h2>
+                            <h1 class="display-1 mb-4 text-white animated slideInDown">Built on History.<br>Driven by Ambition</h1>
+                            <p class="fs-4 text-light mb-5 animated slideInDown">Chasing Glory Across Kampala</p>
+                            <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Matchday Pulse Start -->
+    <section class="container-fluid pb-5">
+        <div class="container">
+            <div class="matchday-pulse rounded wow fadeInUp" data-wow-delay="0.1s">
+                <div class="pulse-label"><span></span> LIVE MATCH CENTRE</div>
+                <div class="pulse-fixture"><strong>TikTok FC</strong><img src="img/logo-1.png" alt="TikTok FC crest"><b>VS</b><img src="img/logo-2.png" alt="Valencia CF crest"><strong>Valencia CF</strong></div>
+                <div class="pulse-meta">Next match · Sat 01 Jan · 15:30<br><a href="match.html">Follow the build-up <i class="fa fa-arrow-right ms-1"></i></a></div>
+            </div>
+        </div>
+    </section>
+    <!-- Matchday Pulse End -->
+
+
+    <!-- Match Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="bg-secondary rounded p-5">
+                <h1 class="display-5 text-center">Ham's Cup Tournament</h1>
+                <p class="text-center fs-3 mb-4">(Group Stage)</p>
+                <div id="match-countdown" class="d-flex justify-content-center mb-4"></div>
+                <div class="text-center w-100 ps-4">
+                    <div class="d-flex align-items-center justify-content-around mb-4">
+                        <div class="text-center">
+                            <img class="img-fluid rounded mb-3" height="100" src="img/logo-1.png" alt="">
+                            <h5>TikTok FC</h5>
+                        </div>
+                        <div class="bg-primary text-white rounded py-2 py-md-3 px-3 px-md-4">VS</div>
+                        <div class="text-center">
+                            <img class="img-fluid rounded mb-3" height="100" src="img/logo-2.png" alt="">
+                            <h5>Valencia CF</h5>
+                        </div>
+                    </div>
+                    <p class="mb-0">January 01, 2045 - 3:30 AM GMT+0</p>
+                    <p>TikTok Grand Stadium</p>
+                    <a class="btn btn-primary py-2 px-4" href="tickets.html">Get Match Tickets</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Match End -->
+
+
+    <!-- Highlight Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="d-inline-block bg-secondary rounded text-primary py-2 px-3 mb-3">Highlights</p>
+                <h1 class="display-5">Relive the Moments That Matter</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="highlight-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid w-100" src="img/highlight-1.jpg" alt="">
+                        <a class="highlight-overlay text-decoration-none" href="">
+                            <small>January 01, 2045</small>
+                            <h4 class="lh-base text-white mb-3">A Dramatic Night in Madrid</h4>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="highlight-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid w-100" src="img/highlight-2.jpg" alt="">
+                        <a class="highlight-overlay text-decoration-none" href="">
+                            <small>January 01, 2045</small>
+                            <h4 class="lh-base text-white mb-3">Three Goals. Three Points.</h4>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="highlight-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid w-100" src="img/highlight-3.jpg" alt="">
+                        <a class="highlight-overlay text-decoration-none" href="">
+                            <small>January 01, 2045</small>
+                            <h4 class="lh-base text-white mb-3">The Lions Roar at Home</h4>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="highlight-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid w-100" src="img/highlight-4.jpg" alt="">
+                        <a class="highlight-overlay text-decoration-none" href="">
+                            <small>January 01, 2045</small>
+                            <h4 class="lh-base text-white mb-3">A Stunning Kampalaan Comeback</h4>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Highlight End -->
+
+    <!-- Latest News Start -->
+    <section class="container-fluid py-5">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div><p class="d-inline-block bg-secondary rounded text-primary py-2 px-3 mb-3">Latest News</p><h1 class="display-5 mb-0">From The Club</h1></div>
+                <a href="highlight.html" class="text-primary mt-3 mt-md-0">View all news <i class="fa fa-arrow-right ms-2"></i></a>
+            </div>
+            <div class="row g-4">
+                <article class="col-md-4 wow fadeInUp" data-wow-delay="0.1s"><a href="highlight.html" class="news-card rounded d-block text-decoration-none"><img src="img/highlight-1.jpg" alt="Team celebrating a goal"><div class="p-4"><small class="text-primary">FIRST TEAM · 3 MIN READ</small><h4 class="mt-2 mb-0">The squad is ready for a big matchday</h4></div></a></article>
+                <article class="col-md-4 wow fadeInUp" data-wow-delay="0.2s"><a href="highlight.html" class="news-card rounded d-block text-decoration-none"><img src="img/highlight-2.jpg" alt="Football action"><div class="p-4"><small class="text-primary">MATCHDAY · 5 MIN READ</small><h4 class="mt-2 mb-0">Everything you need to know before kick-off</h4></div></a></article>
+                <article class="col-md-4 wow fadeInUp" data-wow-delay="0.3s"><a href="shop.html" class="news-card rounded d-block text-decoration-none"><img src="img/highlight-3.jpg" alt="TikTok FC player"><div class="p-4"><small class="text-primary">CLUB · 2 MIN READ</small><h4 class="mt-2 mb-0">The new home kit is available now</h4></div></a></article>
+            </div>
+        </div>
+    </section>
+    <!-- Latest News End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid w-100 h-100 rounded" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <h6 class="d-inline-block bg-secondary rounded text-primary py-2 px-3 mb-3">About Us</h6>
+                    <h1 class="display-5">More Than a Football Club</h1>
+                    <p class="fs-4 text-muted mb-4">Founded in 1912</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate turpis, ut rhoncus odio. Donec tellus dolor, finibus eu vulputate ut, finibus eu nisi. Mauris id urna varius, dapibus libero et, mattis nisi. Aliquam laoreet, elit rhoncus malesuada dapibus, tortor metus efficitur quam, viverra fermentum est est egestas nisi.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate turpis, ut rhoncus odio. Donec tellus dolor, finibus eu vulputate ut, finibus eu nisi. Mauris id urna varius, dapibus libero et, mattis nisi.</p>
+                    <div class="row g-4 pt-2">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="h-100">
+                                <h3>Achievements</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate turpis, ut rhoncus odio.</p>
+                                <p class="text-white"><i class="fa fa-check text-primary me-2"></i>7 League Titles</p>
+                                <p class="text-white"><i class="fa fa-check text-primary me-2"></i>4 Domestic Cups</p>
+                                <p class="text-white mb-0"><i class="fa fa-check text-primary me-2"></i>2 Kampalaan Trophies</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="h-100 bg-primary rounded text-center p-4">
+                                <p class="fs-5 text-white">A Legacy of Passion, Pride & Ambition. One Badge. One Family. One Unbreakable Spirit.</p>
+                                <a class="btn btn-dark py-2 px-4" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Match Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="d-inline-block bg-secondary rounded text-primary py-2 px-3 mb-3">Upcoming Matches</p>
+                <h1 class="display-5">The Road to Glory Continues</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="match-item position-relative overflow-hidden bg-secondary rounded d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark rounded-end d-none d-sm-flex flex-column flex-shrink-0 align-items-center justify-content-center" style="width: 75px; height: 75px;">
+                            <h3 class="text-primary mb-0">01</h3>
+                            <span>JAN</span>
+                        </div>
+                        <div class="text-center w-100 ps-4">
+                            <div class="d-flex align-items-center justify-content-around mb-4">
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-1.png" alt="">
+                                    <h6>TikTok FC</h6>
+                                </div>
+                                <div class="bg-primary text-white rounded py-2 px-3">VS</div>
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-2.png" alt="">
+                                    <h6>Valencia CF</h6>
+                                </div>
+                            </div>
+                            <h4>Ham's Cup Tournament</h4>
+                            <p>TikTok Grand Stadium</p>
+                        </div>
+                        <a class="btn btn-primary py-2 px-3" href="tickets.html">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="match-item position-relative overflow-hidden bg-secondary rounded d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark rounded-end d-none d-sm-flex flex-column flex-shrink-0 align-items-center justify-content-center" style="width: 75px; height: 75px;">
+                            <h3 class="text-primary mb-0">01</h3>
+                            <span>JAN</span>
+                        </div>
+                        <div class="text-center w-100 ps-4">
+                            <div class="d-flex align-items-center justify-content-around mb-4">
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-4.png" alt="">
+                                    <h6>AS Roma</h6>
+                                </div>
+                                <div class="bg-primary text-white rounded py-2 px-3">VS</div>
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-1.png" alt="">
+                                    <h6>TikTok FC</h6>
+                                </div>
+                            </div>
+                            <h4>Serie A</h4>
+                            <p>TikTok Grand Stadium</p>
+                        </div>
+                        <a class="btn btn-primary py-2 px-3" href="tickets.html">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="match-item position-relative overflow-hidden bg-secondary rounded d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark rounded-end d-none d-sm-flex flex-column flex-shrink-0 align-items-center justify-content-center" style="width: 75px; height: 75px;">
+                            <h3 class="text-primary mb-0">01</h3>
+                            <span>JAN</span>
+                        </div>
+                        <div class="text-center w-100 ps-4">
+                            <div class="d-flex align-items-center justify-content-around mb-4">
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-4.png" alt="">
+                                    <h6>Inter Milan</h6>
+                                </div>
+                                <div class="bg-primary text-white rounded py-2 px-3">VS</div>
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-1.png" alt="">
+                                    <h6>TikTok FC</h6>
+                                </div>
+                            </div>
+                            <h4>Serie A</h4>
+                            <p>TikTok Grand Stadium</p>
+                        </div>
+                        <a class="btn btn-primary py-2 px-3" href="tickets.html">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="match-item position-relative overflow-hidden bg-secondary rounded d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark rounded-end d-none d-sm-flex flex-column flex-shrink-0 align-items-center justify-content-center" style="width: 75px; height: 75px;">
+                            <h3 class="text-primary mb-0">01</h3>
+                            <span>JAN</span>
+                        </div>
+                        <div class="text-center w-100 ps-4">
+                            <div class="d-flex align-items-center justify-content-around mb-4">
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-1.png" alt="">
+                                    <h6>TikTok FC</h6>
+                                </div>
+                                <div class="bg-primary text-white rounded py-2 px-3">VS</div>
+                                <div class="text-center">
+                                    <img class="img-fluid rounded mb-3" src="img/logo-3.png" alt="">
+                                    <h6>Borussia Dortmund</h6>
+                                </div>
+                            </div>
+                            <h4>Ham's Cup Tournament</h4>
+                            <p>TikTok Grand Stadium</p>
+                        </div>
+                        <a class="btn btn-primary py-2 px-3" href="tickets.html">Buy Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Match End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="d-inline-block bg-secondary rounded text-primary py-2 px-3 mb-3">Our Players</p>
+                <h1 class="display-5">Meet the Golden Lions</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Luca Moretti</h4>
+                            <span>Goalkeeper</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Matteo Ricci</h4>
+                            <span>Defender</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Jonas Keller</h4>
+                            <span>Defender</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Adrian Costa</h4>
+                            <span>Midfielder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-5.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Marco Bellini</h4>
+                            <span>Midfielder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-6.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Elias Novak</h4>
+                            <span>Forward</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-7.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Leonardo Bianchi</h4>
+                            <span>Forward</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid w-100" src="img/team-8.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-x-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-bottom text-center p-4">
+                            <h4>Victor Santos</h4>
+                            <span>Striker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="d-inline-block bg-secondary rounded text-primary py-2 px-3 mb-3">Club Events</p>
+                <h1 class="display-5">Football Beyond the Pitch</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-secondary rounded h-100 p-4">
+                        <img class="img-fluid rounded w-100 mb-4" src="img/event-1.jpg" alt="">
+                        <a href="#" class="h4 d-inline-block">TikTok FC Fan Festival</a>
+                        <p class="text-white">Meet the Players | Live Music | Family Fun</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate turpis</p>
+                        <hr class="w-25">
+                        <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>10:00 AM - 18:00 PM</p>
+                        <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>Jan 01 - Jan 10, 2045</p>
+                        <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Kampala, uganda</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-secondary rounded h-100 p-4">
+                        <img class="img-fluid rounded w-100 mb-4" src="img/event-2.jpg" alt="">
+                        <a href="#" class="h4 d-inline-block">Legends of TikTok Night</a>
+                        <p class="text-white">Celebrating the Heroes of Our History</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate turpis</p>
+                        <hr class="w-25">
+                        <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>10:00 AM - 18:00 PM</p>
+                        <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>Jan 01 - Jan 10, 2045</p>
+                        <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Kampala, uganda</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-secondary rounded h-100 p-4">
+                        <img class="img-fluid rounded w-100 mb-4" src="img/event-3.jpg" alt="">
+                        <a href="#" class="h4 d-inline-block">Junior Lions Football Camp</a>
+                        <p class="text-white">Train | Learn | Believe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in vulputate turpis</p>
+                        <hr class="w-25">
+                        <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>10:00 AM - 18:00 PM</p>
+                        <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>Jan 01 - Jan 10, 2045</p>
+                        <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, Kampala, uganda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
+
+    <section class="container-fluid pb-5"><div class="container"><div class="bg-secondary rounded p-4 p-md-5 d-md-flex align-items-center justify-content-between"><div><p class="text-primary mb-2">SUPPORT THE CLUB</p><h2 class="mb-1">Help us build the next generation.</h2><p class="mb-0">Every contribution supports our academy and community programmes.</p></div><a href="donate.html" class="btn btn-primary py-3 px-4 mt-3 mt-md-0">Make a donation <i class="fa fa-heart ms-2"></i></a></div></div></section>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="mb-4">Get In Touch</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-map-marker-alt text-primary"></span>
+                        </div>
+                        <span>123 Street, Kampala, uganda</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>+012 345 67890</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>info@example.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="mb-4">Newsletter</h4>
+                    <div class="position-relative mb-4">
+                        <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                    <div class="d-flex pt-1 m-n1">
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-x-twitter"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright rounded-top">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">TikTok Fc</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** The author’s attribution link below must remain intact on your website. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase a Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://osxent.vercel.app">Osxent </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/countdown/jquery.countdown.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

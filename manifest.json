@@ -1,0 +1,10 @@
+{
+  "name": "TikTok FC",
+  "short_name": "TikTok FC",
+  "description": "Official TikTok FC supporters app",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0D0D0D",
+  "theme_color": "#EB1616",
+  "icons": [{ "src": "img/logo-big.png", "sizes": "672x886", "type": "image/png", "purpose": "any" }]
+}
