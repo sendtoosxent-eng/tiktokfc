@@ -69,7 +69,11 @@ document.addEventListener('DOMContentLoaded', function () {
     theme.name = 'theme-color';
     theme.content = '#EB1616';
     document.head.appendChild(theme);
-    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+            .then(function (registration) { return registration.update(); })
+            .catch(function () {});
+    }
     var installEvent;
     var splashInstallButton = document.getElementById('splash-install-app');
     var splashInstallHelp = document.getElementById('splash-install-help');

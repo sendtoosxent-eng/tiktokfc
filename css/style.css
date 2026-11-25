@@ -1,4 +1,9 @@
 /********** Template CSS **********/
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -154,7 +159,7 @@
     box-shadow: none;
 }
 
-.pulse-label { color: #fff; font-family: 'Raleway', sans-serif; font-size: .85rem; letter-spacing: .08em; }
+.pulse-label { color: #fff; font-family: 'Poppins', sans-serif; font-size: .85rem; letter-spacing: .08em; }
 .pulse-label span { display: inline-block; width: 8px; height: 8px; margin-right: 8px; background: var(--bs-primary); border-radius: 50%; box-shadow: 0 0 0 5px rgba(235,22,22,.15); }
 .pulse-fixture { display: flex; align-items: center; justify-content: center; gap: .75rem; color: #fff; text-align: center; }
 .pulse-fixture img { width: 34px; height: 34px; object-fit: contain; }
@@ -415,7 +420,7 @@
 .mobile-nav { display: none; }
 .mobile-splash { display: none; }
 .live-score-card { background: var(--bs-secondary); border-top: 3px solid ; }
-.live-score { font-family: 'Raleway', sans-serif; color: #fff; font-size: clamp(2.5rem, 8vw, 4rem); line-height: 1; }
+.live-score { font-family: 'Poppins', sans-serif; color: #fff; font-size: clamp(2.5rem, 8vw, 4rem); line-height: 1; }
 .lineup-player { display: flex; align-items: center; justify-content: space-between; padding: .9rem 0; border-bottom: 1px solid rgba(255,255,255,.08); }
 .lineup-number { color: var(--bs-primary); width: 34px; font-weight: 700; }
 .auth-tabs .nav-link { color: var(--bs-light); border: 0; border-bottom: 3px solid transparent; }

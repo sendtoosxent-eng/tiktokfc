@@ -1,13 +1,34 @@
-const CACHE = 'tiktok-fc-v2';
+const CACHE = 'tiktok-fc-v3';
 const CORE = ['index.html', 'live.html', 'tickets.html', 'shop.html', 'profile.html', 'donate.html', 'css/style.css', 'js/main.js'];
-self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE))));
-self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));
+
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key))))
+      .then(() => self.clients.claim())
+  );
+});
+
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
-  event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
-    if (new URL(event.request.url).origin === location.origin) {
-      const copy = response.clone(); caches.open(CACHE).then(cache => cache.put(event.request, copy));
-    }
-    return response;
-  }).catch(() => caches.match('index.html'))));
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+
+  // Prefer the network so installed users receive current pages and assets.
+  // If they are offline, the last successful version remains available.
+  event.respondWith(
+    fetch(event.request)
+      .then(response => {
+        if (response.ok) {
+          const copy = response.clone();
+          caches.open(CACHE).then(cache => cache.put(event.request, copy));
+        }
+        return response;
+      })
+      .catch(() => caches.match(event.request).then(cached => cached || caches.match('index.html')))
+  );
 });
