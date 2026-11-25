@@ -75,8 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(function () {});
     }
     var installEvent;
-    var splashInstallButton = document.getElementById('splash-install-app');
-    var splashInstallHelp = document.getElementById('splash-install-help');
     var splashContinueButton = document.getElementById('splash-continue');
     var isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
     var isMobile = window.matchMedia('(max-width: 767px)').matches;
@@ -99,8 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 installEvent = null;
                 dismissMobileSplash();
             });
-        } else if (installButton.id === 'splash-install-app' && splashInstallHelp) {
-            splashInstallHelp.hidden = false;
+        } else if (installButton.id === 'splash-install-app') {
+            dismissMobileSplash();
         }
     });
     if (splashContinueButton) splashContinueButton.addEventListener('click', dismissMobileSplash);
