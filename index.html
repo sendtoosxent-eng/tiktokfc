@@ -13,6 +13,13 @@
     <link href="manifest.json" rel="manifest">
     <meta name="theme-color" content="#EB1616">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+        (function () {
+            var isMobile = window.matchMedia('(max-width: 767px)').matches;
+            var isInstalled = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+            if (isMobile && !isInstalled) document.documentElement.classList.add('mobile-splash-pending');
+        }());
+    </script>
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +41,17 @@
 </head>
 
 <body>
+    <section id="mobile-splash" class="mobile-splash" aria-labelledby="mobile-splash-title">
+        <div class="mobile-splash__content">
+            <img src="img/logo.png" alt="TikTok FC" class="mobile-splash__logo">
+            <p class="mobile-splash__eyebrow">WELCOME TO</p>
+            <h1 id="mobile-splash-title">TikTok FC</h1>
+            <p class="mobile-splash__message">Install the app for quick access to fixtures, tickets, and club updates.</p>
+            <button id="splash-install-app" class="btn btn-primary w-100 py-3" type="button"><i class="fa fa-download me-2"></i>Install app</button>
+            <p id="splash-install-help" class="mobile-splash__help" hidden>To install, tap Share then <strong>Add to Home Screen</strong>.</p>
+            <button id="splash-continue" class="mobile-splash__continue" type="button">Continue to home <i class="fa fa-arrow-right ms-1"></i></button>
+        </div>
+    </section>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status"></div>

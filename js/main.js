@@ -71,10 +71,36 @@ document.addEventListener('DOMContentLoaded', function () {
     document.head.appendChild(theme);
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
     var installEvent;
-    window.addEventListener('beforeinstallprompt', function (event) { event.preventDefault(); installEvent = event; var button = document.getElementById('install-app'); if (button) button.classList.remove('d-none'); });
-    document.addEventListener('click', function (event) {
-        if (event.target.closest('#install-app') && installEvent) { installEvent.prompt(); installEvent.userChoice.then(function () { installEvent = null; }); }
+    var splashInstallButton = document.getElementById('splash-install-app');
+    var splashInstallHelp = document.getElementById('splash-install-help');
+    var splashContinueButton = document.getElementById('splash-continue');
+    var isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    var isMobile = window.matchMedia('(max-width: 767px)').matches;
+    var dismissMobileSplash = function () {
+        document.documentElement.classList.remove('mobile-splash-pending');
+    };
+    if (!isMobile || isStandalone) dismissMobileSplash();
+    window.addEventListener('beforeinstallprompt', function (event) {
+        event.preventDefault();
+        installEvent = event;
+        var button = document.getElementById('install-app');
+        if (button) button.classList.remove('d-none');
     });
+    document.addEventListener('click', function (event) {
+        var installButton = event.target.closest('#install-app, #splash-install-app');
+        if (!installButton) return;
+        if (installEvent) {
+            installEvent.prompt();
+            installEvent.userChoice.then(function () {
+                installEvent = null;
+                dismissMobileSplash();
+            });
+        } else if (installButton.id === 'splash-install-app' && splashInstallHelp) {
+            splashInstallHelp.hidden = false;
+        }
+    });
+    if (splashContinueButton) splashContinueButton.addEventListener('click', dismissMobileSplash);
+    window.addEventListener('appinstalled', dismissMobileSplash);
 
     var page = location.pathname.split('/').pop() || 'index.html';
     var navItems = [

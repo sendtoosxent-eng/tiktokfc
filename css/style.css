@@ -413,7 +413,8 @@
 .play-circle { width: 54px; height: 54px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--bs-primary); color: #fff; box-shadow: 0 0 0 9px rgba(235,22,22,.18); transition: transform .25s ease; }
 .highlight-play:hover .play-circle { transform: scale(1.12); }
 .mobile-nav { display: none; }
-.live-score-card { background: var(--bs-secondary); border-top: 3px solid var(--bs-primary); }
+.mobile-splash { display: none; }
+.live-score-card { background: var(--bs-secondary); border-top: 3px solid ; }
 .live-score { font-family: 'Raleway', sans-serif; color: #fff; font-size: clamp(2.5rem, 8vw, 4rem); line-height: 1; }
 .lineup-player { display: flex; align-items: center; justify-content: space-between; padding: .9rem 0; border-bottom: 1px solid rgba(255,255,255,.08); }
 .lineup-number { color: var(--bs-primary); width: 34px; font-weight: 700; }
@@ -424,6 +425,16 @@
 .donation-option input:checked + label { background: var(--bs-primary); border-color: var(--bs-primary); }
 
 @media (max-width: 767px) {
+    html.mobile-splash-pending { overflow: hidden; }
+    .mobile-splash { position: fixed; z-index: 2000; inset: 0; display: none; align-items: center; justify-content: center; min-height: 100dvh; padding: 2rem; color: #fff; text-align: center; background: radial-gradient(circle at top, #3a1616 0, var(--bs-dark) 48%); }
+    html.mobile-splash-pending .mobile-splash { display: flex; }
+    .mobile-splash__content { width: min(100%, 360px); }
+    .mobile-splash__logo { width: 104px; max-height: 104px; margin-bottom: 1.5rem; object-fit: contain; }
+    .mobile-splash__eyebrow { margin-bottom: .4rem; color: var(--bs-primary); font-size: .75rem; font-weight: 700; letter-spacing: .18em; }
+    .mobile-splash h1 { margin-bottom: 1rem; font-size: clamp(2.5rem, 14vw, 4rem); }
+    .mobile-splash__message { margin: 0 auto 1.75rem; color: var(--bs-light); font-size: 1rem; line-height: 1.65; }
+    .mobile-splash__help { margin: 1rem 0 0; color: var(--bs-light); font-size: .84rem; line-height: 1.5; }
+    .mobile-splash__continue { margin-top: 1.2rem; padding: .5rem; color: #fff; font-weight: 700; background: transparent; border: 0; }
     body { padding-bottom: 88px; }
     .back-to-top { bottom: 100px; right: 18px; }
     .mobile-nav { display: flex; position: fixed; z-index: 1050; bottom: 0; left: 0; right: 0; height: 76px; padding: 7px 7px calc(7px + env(safe-area-inset-bottom)); align-items: flex-end; justify-content: space-around; background: rgba(26,26,26,.98); border-top: 1px solid rgba(255,255,255,.09); box-shadow: 0 -8px 25px rgba(0,0,0,.3); }
